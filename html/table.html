@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/navbar.css"/>
-        <link rel="stylesheet" href="css/index.css"/>
-        <link rel="stylesheet" href="css/response.css"/>
-        <script id="index" type="text/html" src="js/pageIndex.js"></script>
-        <script src="js/pageReport.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/navbar.css"/>
+        <link rel="stylesheet" href="../css/table.css"/>
+        <link rel="stylesheet" href="../css/response.css"/>
+        <script id="index" type="text/html" src="../js/pageIndex.js"></script>
+        <script src="js/pageTable.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
         <title>Controle Finançeiro - Guilherme</title>
         
         <ul class="topnav">
@@ -16,31 +16,20 @@
     </head>
     <body>
         <div>
-            <div>
-                <input type="file" id="fileInput">
-                <input type="submit" value="Ler Arquivo" id="lerArquivo" onclick="lerArquivo()"/>
-            </div>
-            <div>
-                <div id="resultado"></div>
-            </div>
+            <input type="submit" value="Dar Baixa" id="baixa" onclick="salvarJSONLocalmente()"/>
+        </div>
+        <div>
             <table class="yellowTable">
                 <thead>
                     <tr>
                       <th>Descrição</th>
-                      <th>Lugar</th>
+                      <th>Categoria</th>
                       <th>Detalhe</th>
                       <th>Data</th>
                       <th>Valor</th>
                     </tr>
                 </thead>
                 <tbody id="tabela">
-                    <tr id="linha">
-                        <td id="descricaoTable"></td>
-                        <td id="categoriaTable"></td>
-                        <td id="detalheTable"></td>
-                        <td id="dataTable"></td>
-                        <td id="valorTable"></td>
-                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -56,8 +45,8 @@
         <ul class="topnav">
             <li><a href="./spent.html">Saida</a></li>
             <li><a href="./input.html">Entrada</a></li>
-            <li><a href="./table.html">Resumo</a></li>
-            <li><a href="#">Importar</a></li>
+            <li><a href="#">Resumo</a></li>
+            <li><a href="./report.html">Importar</a></li>
         </ul>
     </footer>
 </html>
