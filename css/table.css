@@ -1,0 +1,70 @@
+table.yellowTable {
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.yellowTable td, table.yellowTable th {
+    border: 1px solid #6D6D6D;
+    padding: 3px 2px;
+  }
+  table.yellowTable tbody td {
+    font-size: 13px;
+  }
+  table.yellowTable tr:nth-child(even) {
+    background: #F5E799;
+  }
+  table.yellowTable thead {
+    background: #A1A423;
+    background: -moz-linear-gradient(top, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    background: -webkit-linear-gradient(top, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    background: linear-gradient(to bottom, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    border-bottom: 2px solid #444444;
+  }
+  table.yellowTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #F5E799;
+  }
+  table.yellowTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.yellowTable tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #A1A423;
+    background: -moz-linear-gradient(top, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    background: -webkit-linear-gradient(top, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    background: linear-gradient(to bottom, #b8bb5a 0%, #aaad39 66%, #A1A423 100%);
+    border-top: 2px solid #444444;
+  }
+  table.yellowTable tfoot td {
+    font-size: 14px;
+  }
+  table.yellowTable tfoot .links {
+    text-align: right;
+  }
+  table.yellowTable tfoot .links a{
+    display: inline-block;
+    background: #5A5C14;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+span.currency {
+  float: right;
+}
+
+span.trash {
+  font-size:20px;
+  font-weight: bolder;
+}
+
+span.trash:hover {
+  cursor: pointer;
+}

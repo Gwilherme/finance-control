@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/response.css"/>
+        <script src="js/pageIndex.js"></script>
+        <title>Controle Finançeiro - Guilherme</title>
+        
+        <ul class="topnav">
+            <h1>Controle Finançeiro</h1>
+        </ul>          
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-25">
+                <label for="@next"> Descrição: </label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="descricao"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="@next"> Data: </label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="data"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="@next"> Valor: </label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="valor" onkeydown="maskCurrency(valor)"/>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Salvar" onclick="save()"/>
+            <input type="submit" value="Cancelar" id="toggleMsg" onclick="location.reload(true)"/>
+        </div>
+    </body>
+    <footer>
+        <ul class="topnav">
+            <li><a href="./spent.html">Saida</a></li>
+            <li><a href="#">Entrada</a></li>
+            <li><a href="./table.html">Resumo</a></li>
+            <li><a href="./report.html">Importar</a></li>
+        </ul>
+    </footer>
+</html>

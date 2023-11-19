@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    position: sticky;
+}
+
+div.row {
+    padding: 10px;
+    padding-left: 35px;
+}
+
+footer{
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+}
